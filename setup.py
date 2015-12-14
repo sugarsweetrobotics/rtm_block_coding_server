@@ -1,6 +1,6 @@
 from setuptools import setup
-from distutils.command.install_data import install_data
-from distutils.command.install import INSTALL_SCHEMES
+#from distutils.command.install_data import install_data
+#from distutils.command.install import INSTALL_SCHEMES
 import os
 import sys
 import subprocess
@@ -40,7 +40,7 @@ cmdclasses = {}
 #    scripts.append('wasanbon/bin/wasanbon-cd.bat')
 
 setup(
-    name = 'rtm_block_coding_server',
+    name = 'rtm_block_coding',
     version = version,
     url = 'http://ogata-lab.jp',
     author = 'ysuga',
@@ -48,8 +48,8 @@ setup(
     description = 'RTM Block Coding Server', 
     download_url = 'https://github.com/sugarsweetrobotics/rtm_block_coding_server.git',
     packages = packages,
-    cmdclass = cmdclasses,
-    data_files = [],
+#    cmdclass = cmdclasses,
+#    data_files = [],
     scripts = scripts,
     license = 'GPLv3',
     install_requires = [
